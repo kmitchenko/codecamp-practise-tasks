@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Algorithm Scripting</title>
+</head>
+
+<body>
+    <script>
+        // #1
+        // function convertToF(celsius) {
+        //     return celsius * 9 / 5 + 32;
+        // }
+
+        // convertToF(30);
+
+        //#2
+
+        // function reverseString(str) {
+        //     let arr = str.split('');
+        //     str = arr.reverse().join('');
+        //     return str;
+        // }
+
+        // reverseString("Greetings from Earth");
+
+        //#3
+
+        // function factorialize(num) {
+        //    return (num === 0) ? 1 : num * factorialize(num - 1);
+        // }
+
+        // factorialize(5);
+
+        //#4
+
+        // function findLongestWordLength(str) {
+        //     let arr = str.split(' ');
+        //     let largestEl = 0;
+        //     arr.forEach(element => {
+        //         if (elLength < element.length) elLength = element.length;
+        //     });
+        //     return largestEl;
+        // }
+
+        // findLongestWordLength("The quick brown fox jumped over the lazy dog");
+
+        //#5
+        // function largestOfFour(arr) {
+        //     return arr.map(item => Math.max(...item));
+        // }
+
+        // largestOfFour([
+        //     [4, 5, 1, 3],
+        //     [13, 27, 18, 26],
+        //     [32, 35, 37, 39],
+        //     [1000, 1001, 857, 1]
+        // ]);
+
+        //#6
+
+        // function confirmEnding(str, target) {
+        //     return target === str.slice(-target.length);
+        // }
+
+        // console.log(confirmEnding("Bastian", "n"));
+
+        //#7
+
+        // function repeatStringNumTimes(str, num) {
+        //     if (num <= 0) {
+        //         return ''
+        //     } else {
+        //         let newStr = '';
+        //         for (let i = 1; i <= num; i++) {
+        //             newStr += str;
+        //         }
+        //         return newStr;
+        //     }
+        //     // return num > 0 ? str + repeatStringNumTimes(str, num - 1) : '';
+        // }
+
+        // console.log(repeatStringNumTimes("abc", 3));
+
+        //#8
+
+        // function truncateString(str, num) {
+        //     return str.length > num ? str.slice(0, num) + '...' : str;
+        // }
+
+        // truncateString("A-tisket a-tasket A green and yellow basket", 8);
+
+        //#9
+
+        // function findElement(arr, func) {
+        //     return arr.find(func);
+        // }
+
+        // findElement([1, 2, 3, 4], num => num % 2 === 0);
+
+        //#10
+        // function booWho(bool) {
+        //     return typeof bool === 'boolean';
+        //   }
+
+        //   booWho(null);
+
+        // #11
+
+        // function titleCase(str) {
+        //     let arr = str.toLowerCase().split(' ');
+        //     str = arr.map(el => {
+        //         return el[0].toUpperCase() + el.substring(1);
+        //     }).join(' ');
+        //     return str;
+        // }
+
+        // titleCase("I'm a little tea pot");
+
+        // #12
+
+        // function frankenSplice(arr1, arr2, n) {
+        //     let newArr = arr2.slice();
+        //     newArr.splice(n, 0, ...arr1);
+        //     return newArr;
+        // }
+
+        // frankenSplice([1, 2, 3], [4, 5, 6], 1);
+
+        //#13
+
+        // function bouncer(arr) {
+        //     let newArr = [];
+        //     arr.forEach(item => {
+        //         if (item) {
+        //             newArr.push(item);
+        //         }
+        //     });
+        //     return newArr;
+        // }
+
+        // bouncer([7, "ate", "", false, 9]);
+
+        //#14 
+
+        // function getIndexToIns(arr, num) {
+        //     let itemIns = 0;
+        //     arr.sort((a, b) => a - b);
+        //     for (let i = 0; i < arr.length; i++) {
+        //         if (num <= arr[i]) {
+        //             itemIns = i;
+        //             break;
+        //         } else itemIns = i + 1;
+        //     }
+        //     return itemIns;
+
+        // }
+        // getIndexToIns([10, 20, 30, 40, 50], 35);
+
+        // #15
+
+        // function mutation(arr) {
+        //     let newArr = arr.map(item => item.toLowerCase().split(""));
+        //     return newArr[1].every(letter => newArr[0].includes(letter))
+        // }
+
+        // mutation(["hello", "hey"]);
+
+        // #16
+
+        // function chunkArrayInGroups(arr, size) {
+        //     let newArr = [];
+        //     for (let i = 0; i < arr.length; i += size) {
+        //         newArr.push(arr.slice(i, i + size))
+        //     }
+        //     return newArr;
+        // }
+
+        // chunkArrayInGroups(["a", "b", "c", "d"], 2);
+    </script>
+</body>
+
+</html>
